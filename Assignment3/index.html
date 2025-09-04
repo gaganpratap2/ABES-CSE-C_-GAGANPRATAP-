@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdf3f3;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .item {
+      border: 4px solid #b36060;
+      border-radius: 12px;
+      width: 260px;
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      max-height: 200px;
+      object-fit: contain;
+      opacity: 0.9;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .item img:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .item h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #b36060;
+    }
+
+    @media (max-width: 768px) {
+      .item {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="item">
+      <h3>PIZZA</h3>
+      <img src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-individual-small-pizza-png-image_14692086.png" alt="Pizza" />
+    </div>
+
+    <div class="item">
+      <h3>BURGER</h3>
+      <img src="https://media.istockphoto.com/id/185216861/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=omiz-qC7MzAGgOq9i0JdcU49ovuauPK8gh9-YbZ8WeU=" alt="Burger" />
+    </div>
+
+    <div class="item">
+      <h3>PASTA</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-_PzrCRZPnEo-1hB4BMofk6LAvJN0hSGCQ&s" alt="Pasta" />
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .menu{
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        img{
+            opacity: 0.8;
+            
+        }
+        img:hover{
+            transform: scale(1.1);
+  transition: transform 0.3s ease;
+        }
+    </style>
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+
+        <div style="border: 5px solid rgb(179, 96, 96);" class="pizza">
+           <center> <h3>PIZZA</h3></center>
+            <img style="width: 200px ;height: 200px;" src="https://png.pngtree.com/png-clipart/20240327/original/pngtree-individual-small-pizza-png-image_14692086.png" alt="">
+            
+        </div>
+
+        <div style="border: 5px solid rgb(179, 96, 96);"  class="burger">
+           <center> <h3>BURGER</h3> </center>
+            <img style="width: 250px ;height: 250px;" src="https://media.istockphoto.com/id/185216861/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=omiz-qC7MzAGgOq9i0JdcU49ovuauPK8gh9-YbZ8WeU=" alt="">
+        </div>
+
+        <div style="border: 5px solid rgb(179, 96, 96);"   class="pasta">
+            <center><h3>PASTA</h3></center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX-_PzrCRZPnEo-1hB4BMofk6LAvJN0hSGCQ&s" alt="">
+        </div>
+
+    </div>
+</body>
+</html> -->
