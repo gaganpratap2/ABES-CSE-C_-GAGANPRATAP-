@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Showcase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(90deg, #767d37 0%, #40d59c 100%);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .cards {
+      width: 340px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .cards h2 {
+      color: #7a58c1;
+      font-size: 1.5rem;
+    }
+
+    .cards p {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cards" id="card1">
+      <h2>iPhone 😎</h2>
+    </div>
+    <div class="cards" id="card2">
+      <h2>Samsung S24 😎</h2>
+    </div>
+  </div>
+
+  <script>
+    const obj1 = {
+      phones: "iPhone 😎",
+      variant: "iPhone 17",
+      ram_storage: "16GB / 512GB",
+      price: "₹179,999"
+    };
+
+    const obj2 = {
+      phones: "Samsung S24 😎",
+      variant: "16GB / 512GB",
+      price: "₹139,999"
+    };
+
+    const card1 = document.getElementById("card1");
+    card1.innerHTML += `
+      <p>Model: ${obj1.variant}</p>
+      <p>Specs: ${obj1.ram_storage}</p>
+      <p>Price: ${obj1.price}</p>
+    `;
+
+    const card2 = document.getElementById("card2");
+    card2.innerHTML += `
+      <p>Variant: ${obj2.variant}</p>
+      <p>Price: ${obj2.price}</p>
+    `;
+  </script>
+</body>
+</html>
+
+
